@@ -51,7 +51,8 @@ export default {
         border: 1px solid black;
         height: 200px;
         width: 200px;
-      }
+        list-style-type:  none;
+      };
     };
   };
 </style>
