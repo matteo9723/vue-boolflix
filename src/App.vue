@@ -25,8 +25,8 @@ export default {
     }
   },
 
-  mounted:{
-      popolari(){
+  mounted(){
+      
         axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=9f9a8bc474e9c025cefdaf1ff2c51e03&language=en-US&page=1`).then( r =>{
           this.listaFilm=r.data.results
           console.log(r.data.results);
@@ -38,7 +38,7 @@ export default {
         }).catch( e => {
          console.log(e);
         });
-      },
+      
   },
   methods:{
     ricerca(value){
