@@ -1,7 +1,13 @@
 <template>
   <header>
-    <input type="text" v-model="value">
-    <button @click="$emit('searchFilm',value)" >invia</button>
+
+    <div class="logo"><h2>Boolflix</h2></div>
+
+    <div class="input">
+      <input type="text" v-model="value">
+      <button @click="$emit('searchFilm',value)" >invia</button>
+    </div>
+
   </header>
 </template>
 
@@ -28,6 +34,17 @@ export default {
   header{
     width: 100%;
     height: 10vh;
-    background-color: red
+    background: linear-gradient(black ,gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo , .input{
+      margin: 0 10px;
+    };
+    .logo{
+      h2{
+        color: rgb(192, 5, 5)
+      };
+    };
   };
 </style>
